@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: rgb(67, 67, 187);
-            color: white;
+            color: white; /* Comentário em Css */
             font: normal 20pt arial;
         }
         h1 {
@@ -18,12 +18,19 @@
     </style>
 </head>
 <body>
-    <h1>Olá mundo!</h1>
-    <p> Já me livrei da maldição</p>
+    <h1>Olá mundo!</h1> <!-- Comentário em Html -->
     <script>
-        window.alert('Minha primeira mensagem');
-        window.confirm('Está gostando do curso?');
-        window.prompt('Qual o seu nome')
+
+        var nome = window.prompt('Qual o seu nome') //Comentário em JavaScript
+        document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras`)
+       // window.alert('Prazer em te conhecer ' + nome); 
+
+        var n1 = Number.parseInt(window.prompt('Digite um número :'));// Podendo ultilizar soemnte a variável number 
+        var n2 = Number.parseInt(window.prompt('Digite outro número :'));
+        var soma = n1 + n2;
+
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`);
+
     </script>
 </body>
 </html>
